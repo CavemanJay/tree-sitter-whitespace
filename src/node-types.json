@@ -1,0 +1,1054 @@
+[
+  {
+    "type": "add",
+    "named": true,
+    "fields": {
+      "imp": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "imp_arithmetic",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "S",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "call",
+    "named": true,
+    "fields": {
+      "imp": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "imp_flow",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "S",
+          "named": true
+        },
+        {
+          "type": "T",
+          "named": true
+        },
+        {
+          "type": "label_name",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "copy",
+    "named": true,
+    "fields": {
+      "imp": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "imp_stack",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "S",
+          "named": true
+        },
+        {
+          "type": "T",
+          "named": true
+        },
+        {
+          "type": "num",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "discard",
+    "named": true,
+    "fields": {
+      "imp": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "imp_stack",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "L",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "div",
+    "named": true,
+    "fields": {
+      "imp": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "imp_arithmetic",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "S",
+          "named": true
+        },
+        {
+          "type": "T",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "dup",
+    "named": true,
+    "fields": {
+      "imp": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "imp_stack",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "L",
+          "named": true
+        },
+        {
+          "type": "S",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "exit",
+    "named": true,
+    "fields": {
+      "imp": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "imp_flow",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "L",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "imp_arithmetic",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "S",
+          "named": true
+        },
+        {
+          "type": "T",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "imp_flow",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "L",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "imp_heap",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "T",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "imp_io",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "L",
+          "named": true
+        },
+        {
+          "type": "T",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "imp_stack",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "S",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "jump",
+    "named": true,
+    "fields": {
+      "imp": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "imp_flow",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "L",
+          "named": true
+        },
+        {
+          "type": "S",
+          "named": true
+        },
+        {
+          "type": "label_name",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "jump_neg",
+    "named": true,
+    "fields": {
+      "imp": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "imp_flow",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "T",
+          "named": true
+        },
+        {
+          "type": "label_name",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "jump_zero",
+    "named": true,
+    "fields": {
+      "imp": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "imp_flow",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "S",
+          "named": true
+        },
+        {
+          "type": "T",
+          "named": true
+        },
+        {
+          "type": "label_name",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "label",
+    "named": true,
+    "fields": {
+      "imp": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "imp_flow",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "S",
+          "named": true
+        },
+        {
+          "type": "label_name",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "label_name",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "L",
+          "named": true
+        },
+        {
+          "type": "S",
+          "named": true
+        },
+        {
+          "type": "T",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "load",
+    "named": true,
+    "fields": {
+      "imp": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "imp_heap",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "L",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "mod",
+    "named": true,
+    "fields": {
+      "imp": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "imp_arithmetic",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "T",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "mul",
+    "named": true,
+    "fields": {
+      "imp": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "imp_arithmetic",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "L",
+          "named": true
+        },
+        {
+          "type": "S",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "num",
+    "named": true,
+    "fields": {
+      "sign": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "S",
+            "named": true
+          },
+          {
+            "type": "T",
+            "named": true
+          }
+        ]
+      },
+      "terminator": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "L",
+            "named": true
+          }
+        ]
+      },
+      "value": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "S",
+            "named": true
+          },
+          {
+            "type": "T",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "op_arithmetic",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "add",
+          "named": true
+        },
+        {
+          "type": "div",
+          "named": true
+        },
+        {
+          "type": "mod",
+          "named": true
+        },
+        {
+          "type": "mul",
+          "named": true
+        },
+        {
+          "type": "sub",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "op_flow",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "call",
+          "named": true
+        },
+        {
+          "type": "exit",
+          "named": true
+        },
+        {
+          "type": "jump",
+          "named": true
+        },
+        {
+          "type": "jump_neg",
+          "named": true
+        },
+        {
+          "type": "jump_zero",
+          "named": true
+        },
+        {
+          "type": "label",
+          "named": true
+        },
+        {
+          "type": "return",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "op_heap",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "load",
+          "named": true
+        },
+        {
+          "type": "store",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "op_io",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "print_char",
+          "named": true
+        },
+        {
+          "type": "print_num",
+          "named": true
+        },
+        {
+          "type": "read_char",
+          "named": true
+        },
+        {
+          "type": "read_num",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "op_stack",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "copy",
+          "named": true
+        },
+        {
+          "type": "discard",
+          "named": true
+        },
+        {
+          "type": "dup",
+          "named": true
+        },
+        {
+          "type": "push",
+          "named": true
+        },
+        {
+          "type": "slide",
+          "named": true
+        },
+        {
+          "type": "swap",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "print_char",
+    "named": true,
+    "fields": {
+      "imp": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "imp_io",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "S",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "print_num",
+    "named": true,
+    "fields": {
+      "imp": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "imp_io",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "S",
+          "named": true
+        },
+        {
+          "type": "T",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "push",
+    "named": true,
+    "fields": {
+      "imp": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "imp_stack",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "S",
+          "named": true
+        },
+        {
+          "type": "num",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "read_char",
+    "named": true,
+    "fields": {
+      "imp": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "imp_io",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "S",
+          "named": true
+        },
+        {
+          "type": "T",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "read_num",
+    "named": true,
+    "fields": {
+      "imp": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "imp_io",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "T",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "return",
+    "named": true,
+    "fields": {
+      "imp": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "imp_flow",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "L",
+          "named": true
+        },
+        {
+          "type": "T",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "slide",
+    "named": true,
+    "fields": {
+      "imp": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "imp_stack",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "L",
+          "named": true
+        },
+        {
+          "type": "T",
+          "named": true
+        },
+        {
+          "type": "num",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "source_file",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "op_arithmetic",
+          "named": true
+        },
+        {
+          "type": "op_flow",
+          "named": true
+        },
+        {
+          "type": "op_heap",
+          "named": true
+        },
+        {
+          "type": "op_io",
+          "named": true
+        },
+        {
+          "type": "op_stack",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "store",
+    "named": true,
+    "fields": {
+      "imp": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "imp_heap",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "S",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "sub",
+    "named": true,
+    "fields": {
+      "imp": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "imp_arithmetic",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "S",
+          "named": true
+        },
+        {
+          "type": "T",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "swap",
+    "named": true,
+    "fields": {
+      "imp": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "imp_stack",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "L",
+          "named": true
+        },
+        {
+          "type": "T",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "L",
+    "named": true
+  },
+  {
+    "type": "S",
+    "named": true
+  },
+  {
+    "type": "T",
+    "named": true
+  }
+]

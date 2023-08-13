@@ -1,0 +1,17 @@
+{
+  "name": "whitespace",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bindings/node",
+  "scripts": {
+    "tsitter": "tree-sitter",
+    "ts": "tree-sitter",
+    "gen": "tree-sitter generate"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tree-sitter-cli": "^0.20.8"
+  }
+}
