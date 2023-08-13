@@ -2,3 +2,4 @@ node_modules
 *.exp
 *.lib
 *.obj
+target
