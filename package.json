@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "bindings/node",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cavemanjay/tree-sitter-whitespace"
+  },
   "scripts": {
     "tsitter": "tree-sitter",
     "ts": "tree-sitter",
