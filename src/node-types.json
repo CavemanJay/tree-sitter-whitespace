@@ -1,419 +1,138 @@
 [
   {
+    "type": "L",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "S",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "T",
+    "named": true,
+    "fields": {}
+  },
+  {
     "type": "add",
     "named": true,
-    "fields": {
-      "imp": {
-        "multiple": false,
-        "required": true,
-        "types": [
-          {
-            "type": "imp_arithmetic",
-            "named": true
-          }
-        ]
-      }
-    },
-    "children": {
-      "multiple": true,
-      "required": true,
-      "types": [
-        {
-          "type": "S",
-          "named": true
-        }
-      ]
-    }
+    "fields": {}
   },
   {
     "type": "call",
     "named": true,
     "fields": {
-      "imp": {
+      "label_name": {
         "multiple": false,
         "required": true,
         "types": [
           {
-            "type": "imp_flow",
+            "type": "label_name",
             "named": true
           }
         ]
       }
-    },
-    "children": {
-      "multiple": true,
-      "required": true,
-      "types": [
-        {
-          "type": "S",
-          "named": true
-        },
-        {
-          "type": "T",
-          "named": true
-        },
-        {
-          "type": "label_name",
-          "named": true
-        }
-      ]
     }
   },
   {
     "type": "copy",
     "named": true,
     "fields": {
-      "imp": {
+      "num": {
         "multiple": false,
         "required": true,
         "types": [
           {
-            "type": "imp_stack",
+            "type": "num",
             "named": true
           }
         ]
       }
-    },
-    "children": {
-      "multiple": true,
-      "required": true,
-      "types": [
-        {
-          "type": "S",
-          "named": true
-        },
-        {
-          "type": "T",
-          "named": true
-        },
-        {
-          "type": "num",
-          "named": true
-        }
-      ]
     }
   },
   {
     "type": "discard",
     "named": true,
-    "fields": {
-      "imp": {
-        "multiple": false,
-        "required": true,
-        "types": [
-          {
-            "type": "imp_stack",
-            "named": true
-          }
-        ]
-      }
-    },
-    "children": {
-      "multiple": true,
-      "required": true,
-      "types": [
-        {
-          "type": "L",
-          "named": true
-        }
-      ]
-    }
+    "fields": {}
   },
   {
     "type": "div",
     "named": true,
-    "fields": {
-      "imp": {
-        "multiple": false,
-        "required": true,
-        "types": [
-          {
-            "type": "imp_arithmetic",
-            "named": true
-          }
-        ]
-      }
-    },
-    "children": {
-      "multiple": true,
-      "required": true,
-      "types": [
-        {
-          "type": "S",
-          "named": true
-        },
-        {
-          "type": "T",
-          "named": true
-        }
-      ]
-    }
+    "fields": {}
   },
   {
     "type": "dup",
     "named": true,
-    "fields": {
-      "imp": {
-        "multiple": false,
-        "required": true,
-        "types": [
-          {
-            "type": "imp_stack",
-            "named": true
-          }
-        ]
-      }
-    },
-    "children": {
-      "multiple": true,
-      "required": true,
-      "types": [
-        {
-          "type": "L",
-          "named": true
-        },
-        {
-          "type": "S",
-          "named": true
-        }
-      ]
-    }
+    "fields": {}
   },
   {
     "type": "exit",
     "named": true,
-    "fields": {
-      "imp": {
-        "multiple": false,
-        "required": true,
-        "types": [
-          {
-            "type": "imp_flow",
-            "named": true
-          }
-        ]
-      }
-    },
-    "children": {
-      "multiple": true,
-      "required": true,
-      "types": [
-        {
-          "type": "L",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "imp_arithmetic",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": true,
-      "types": [
-        {
-          "type": "S",
-          "named": true
-        },
-        {
-          "type": "T",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "imp_flow",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": false,
-      "required": true,
-      "types": [
-        {
-          "type": "L",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "imp_heap",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": true,
-      "types": [
-        {
-          "type": "T",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "imp_io",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": true,
-      "types": [
-        {
-          "type": "L",
-          "named": true
-        },
-        {
-          "type": "T",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "imp_stack",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": false,
-      "required": true,
-      "types": [
-        {
-          "type": "S",
-          "named": true
-        }
-      ]
-    }
+    "fields": {}
   },
   {
     "type": "jump",
     "named": true,
     "fields": {
-      "imp": {
+      "label_name": {
         "multiple": false,
         "required": true,
         "types": [
           {
-            "type": "imp_flow",
+            "type": "label_name",
             "named": true
           }
         ]
       }
-    },
-    "children": {
-      "multiple": true,
-      "required": true,
-      "types": [
-        {
-          "type": "L",
-          "named": true
-        },
-        {
-          "type": "S",
-          "named": true
-        },
-        {
-          "type": "label_name",
-          "named": true
-        }
-      ]
     }
   },
   {
     "type": "jump_neg",
     "named": true,
     "fields": {
-      "imp": {
+      "label_name": {
         "multiple": false,
         "required": true,
         "types": [
           {
-            "type": "imp_flow",
+            "type": "label_name",
             "named": true
           }
         ]
       }
-    },
-    "children": {
-      "multiple": true,
-      "required": true,
-      "types": [
-        {
-          "type": "T",
-          "named": true
-        },
-        {
-          "type": "label_name",
-          "named": true
-        }
-      ]
     }
   },
   {
     "type": "jump_zero",
     "named": true,
     "fields": {
-      "imp": {
+      "label_name": {
         "multiple": false,
         "required": true,
         "types": [
           {
-            "type": "imp_flow",
+            "type": "label_name",
             "named": true
           }
         ]
       }
-    },
-    "children": {
-      "multiple": true,
-      "required": true,
-      "types": [
-        {
-          "type": "S",
-          "named": true
-        },
-        {
-          "type": "T",
-          "named": true
-        },
-        {
-          "type": "label_name",
-          "named": true
-        }
-      ]
     }
   },
   {
     "type": "label",
     "named": true,
     "fields": {
-      "imp": {
+      "label_name": {
         "multiple": false,
         "required": true,
         "types": [
           {
-            "type": "imp_flow",
+            "type": "label_name",
             "named": true
           }
         ]
       }
-    },
-    "children": {
-      "multiple": true,
-      "required": true,
-      "types": [
-        {
-          "type": "S",
-          "named": true
-        },
-        {
-          "type": "label_name",
-          "named": true
-        }
-      ]
     }
   },
   {
@@ -442,84 +161,17 @@
   {
     "type": "load",
     "named": true,
-    "fields": {
-      "imp": {
-        "multiple": false,
-        "required": true,
-        "types": [
-          {
-            "type": "imp_heap",
-            "named": true
-          }
-        ]
-      }
-    },
-    "children": {
-      "multiple": false,
-      "required": true,
-      "types": [
-        {
-          "type": "L",
-          "named": true
-        }
-      ]
-    }
+    "fields": {}
   },
   {
     "type": "mod",
     "named": true,
-    "fields": {
-      "imp": {
-        "multiple": false,
-        "required": true,
-        "types": [
-          {
-            "type": "imp_arithmetic",
-            "named": true
-          }
-        ]
-      }
-    },
-    "children": {
-      "multiple": true,
-      "required": true,
-      "types": [
-        {
-          "type": "T",
-          "named": true
-        }
-      ]
-    }
+    "fields": {}
   },
   {
     "type": "mul",
     "named": true,
-    "fields": {
-      "imp": {
-        "multiple": false,
-        "required": true,
-        "types": [
-          {
-            "type": "imp_arithmetic",
-            "named": true
-          }
-        ]
-      }
-    },
-    "children": {
-      "multiple": true,
-      "required": true,
-      "types": [
-        {
-          "type": "L",
-          "named": true
-        },
-        {
-          "type": "S",
-          "named": true
-        }
-      ]
-    }
+    "fields": {}
   },
   {
     "type": "num",
@@ -530,12 +182,12 @@
         "required": true,
         "types": [
           {
-            "type": "S",
-            "named": true
+            "type": "\t",
+            "named": false
           },
           {
-            "type": "T",
-            "named": true
+            "type": " ",
+            "named": false
           }
         ]
       },
@@ -544,8 +196,8 @@
         "required": true,
         "types": [
           {
-            "type": "L",
-            "named": true
+            "type": "\n",
+            "named": false
           }
         ]
       },
@@ -719,207 +371,58 @@
   {
     "type": "print_char",
     "named": true,
-    "fields": {
-      "imp": {
-        "multiple": false,
-        "required": true,
-        "types": [
-          {
-            "type": "imp_io",
-            "named": true
-          }
-        ]
-      }
-    },
-    "children": {
-      "multiple": true,
-      "required": true,
-      "types": [
-        {
-          "type": "S",
-          "named": true
-        }
-      ]
-    }
+    "fields": {}
   },
   {
     "type": "print_num",
     "named": true,
-    "fields": {
-      "imp": {
-        "multiple": false,
-        "required": true,
-        "types": [
-          {
-            "type": "imp_io",
-            "named": true
-          }
-        ]
-      }
-    },
-    "children": {
-      "multiple": true,
-      "required": true,
-      "types": [
-        {
-          "type": "S",
-          "named": true
-        },
-        {
-          "type": "T",
-          "named": true
-        }
-      ]
-    }
+    "fields": {}
   },
   {
     "type": "push",
     "named": true,
     "fields": {
-      "imp": {
+      "num": {
         "multiple": false,
         "required": true,
         "types": [
           {
-            "type": "imp_stack",
+            "type": "num",
             "named": true
           }
         ]
       }
-    },
-    "children": {
-      "multiple": true,
-      "required": true,
-      "types": [
-        {
-          "type": "S",
-          "named": true
-        },
-        {
-          "type": "num",
-          "named": true
-        }
-      ]
     }
   },
   {
     "type": "read_char",
     "named": true,
-    "fields": {
-      "imp": {
-        "multiple": false,
-        "required": true,
-        "types": [
-          {
-            "type": "imp_io",
-            "named": true
-          }
-        ]
-      }
-    },
-    "children": {
-      "multiple": true,
-      "required": true,
-      "types": [
-        {
-          "type": "S",
-          "named": true
-        },
-        {
-          "type": "T",
-          "named": true
-        }
-      ]
-    }
+    "fields": {}
   },
   {
     "type": "read_num",
     "named": true,
-    "fields": {
-      "imp": {
-        "multiple": false,
-        "required": true,
-        "types": [
-          {
-            "type": "imp_io",
-            "named": true
-          }
-        ]
-      }
-    },
-    "children": {
-      "multiple": true,
-      "required": true,
-      "types": [
-        {
-          "type": "T",
-          "named": true
-        }
-      ]
-    }
+    "fields": {}
   },
   {
     "type": "return",
     "named": true,
-    "fields": {
-      "imp": {
-        "multiple": false,
-        "required": true,
-        "types": [
-          {
-            "type": "imp_flow",
-            "named": true
-          }
-        ]
-      }
-    },
-    "children": {
-      "multiple": true,
-      "required": true,
-      "types": [
-        {
-          "type": "L",
-          "named": true
-        },
-        {
-          "type": "T",
-          "named": true
-        }
-      ]
-    }
+    "fields": {}
   },
   {
     "type": "slide",
     "named": true,
     "fields": {
-      "imp": {
+      "num": {
         "multiple": false,
         "required": true,
         "types": [
           {
-            "type": "imp_stack",
+            "type": "num",
             "named": true
           }
         ]
       }
-    },
-    "children": {
-      "multiple": true,
-      "required": true,
-      "types": [
-        {
-          "type": "L",
-          "named": true
-        },
-        {
-          "type": "T",
-          "named": true
-        },
-        {
-          "type": "num",
-          "named": true
-        }
-      ]
     }
   },
   {
@@ -956,99 +459,28 @@
   {
     "type": "store",
     "named": true,
-    "fields": {
-      "imp": {
-        "multiple": false,
-        "required": true,
-        "types": [
-          {
-            "type": "imp_heap",
-            "named": true
-          }
-        ]
-      }
-    },
-    "children": {
-      "multiple": false,
-      "required": true,
-      "types": [
-        {
-          "type": "S",
-          "named": true
-        }
-      ]
-    }
+    "fields": {}
   },
   {
     "type": "sub",
     "named": true,
-    "fields": {
-      "imp": {
-        "multiple": false,
-        "required": true,
-        "types": [
-          {
-            "type": "imp_arithmetic",
-            "named": true
-          }
-        ]
-      }
-    },
-    "children": {
-      "multiple": true,
-      "required": true,
-      "types": [
-        {
-          "type": "S",
-          "named": true
-        },
-        {
-          "type": "T",
-          "named": true
-        }
-      ]
-    }
+    "fields": {}
   },
   {
     "type": "swap",
     "named": true,
-    "fields": {
-      "imp": {
-        "multiple": false,
-        "required": true,
-        "types": [
-          {
-            "type": "imp_stack",
-            "named": true
-          }
-        ]
-      }
-    },
-    "children": {
-      "multiple": true,
-      "required": true,
-      "types": [
-        {
-          "type": "L",
-          "named": true
-        },
-        {
-          "type": "T",
-          "named": true
-        }
-      ]
-    }
+    "fields": {}
   },
   {
-    "type": "L",
-    "named": true
+    "type": "\t",
+    "named": false
   },
   {
-    "type": "S",
-    "named": true
+    "type": "\n",
+    "named": false
   },
   {
-    "type": "T",
-    "named": true
+    "type": " ",
+    "named": false
   }
 ]

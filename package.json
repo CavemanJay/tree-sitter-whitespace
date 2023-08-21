@@ -10,12 +10,16 @@
   "scripts": {
     "tsitter": "tree-sitter",
     "ts": "tree-sitter",
-    "gen": "tree-sitter generate"
+    "gen": "tree-sitter generate",
+    "test": "pnpm tsitter generate && pnpm tsitter parse ./hello_world.ws"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "tree-sitter-cli": "^0.20.8"
+  },
+  "dependencies": {
+    "nan": "^2.12.1"
   }
 }
